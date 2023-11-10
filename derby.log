@@ -1,0 +1,23 @@
+----------------------------------------------------------------
+Wed Jan 18 06:39:04 CST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0185-c4e3-d3c0-00000c3391d0 
+on database directory /Library/Caches/Avid/AvidLink/Db/3.19/appmanager.db with class loader sun.misc.Launcher$AppClassLoader@232204a1 
+Loaded from file:/Applications/Avid/Avid%20Link/AvidAppManHelper.app/Contents/Java/AvidApplicationManagerHelper.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0-internal-fastdebug-avid_2020_03_04_14_46-b00
+user.dir=/Users/donaldhull
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.16
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+Wed Feb 01 18:08:20 CST 2023 Thread[derby.index-stat-thread,5,derby.daemons] {istat} failed to initialize index statistics updater
+ERROR 08004: Database connection refused.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericAuthorizer.refresh(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericAuthorizer.<init>(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.initialize(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.setupConnection(Unknown Source)
+	at org.apache.derby.impl.services.daemon.IndexStatisticsDaemonImpl.processingLoop(Unknown Source)
+	at org.apache.derby.impl.services.daemon.IndexStatisticsDaemonImpl.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
